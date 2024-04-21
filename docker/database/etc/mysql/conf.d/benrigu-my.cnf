@@ -1,0 +1,13 @@
+[mysqld]
+character-set-server=utf8mb4
+max_connections=100
+wait_timeout=60
+
+[client]
+default-character-set=utf8mb4
+
+[mysqldump]
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4

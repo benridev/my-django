@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: firstpy
+    build:
+      context: ./docker/python
+      dockerfile: ./Dockerfile-py-3-12-2-slim-bw
+    command: bash -c 'usermod -o -u 1000 www-data ; groupmod -o -g 1000 www-data ; chown -R www-data:www-data /usr/src/app/;source env/bin/activate && pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000'
+    # python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+      - venv_data:/usr/src/app/env
+    ports:
+      - 8000:8000
+    env_file:
+      - ./app/.env.dev
+    depends_on:
+      - db
+  db:
+    container_name: firstpydb
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=hello_django
+      - POSTGRES_PASSWORD=hello_django
+      - POSTGRES_DB=hello_django_dev
+volumes:
+  postgres_data:
+  venv_data:
+    driver: local
