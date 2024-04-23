@@ -1,2 +1,4 @@
 docker/database/var
 docker/nginx/conf.d/*.conf
+app/env
+app/.env*
