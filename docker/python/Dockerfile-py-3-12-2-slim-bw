@@ -3,6 +3,8 @@ FROM python:3.12.2-slim-bookworm
 
 # set work directory
 WORKDIR /usr/src/app
+RUN mkdir /usr/src/app/staticfiles
+RUN mkdir /usr/src/app/mediafiles
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1

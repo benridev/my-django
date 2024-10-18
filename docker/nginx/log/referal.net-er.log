@@ -1,0 +1,37 @@
+2024/10/18 09:59:42 [error] 20#20: *1 open() "/usr/src/app/staticfilesadmin/css/base.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/base.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:42 [error] 20#20: *1 open() "/usr/src/app/staticfilesadmin/css/nav_sidebar.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/nav_sidebar.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:42 [error] 21#21: *3 open() "/usr/src/app/staticfilesadmin/css/login.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/login.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:42 [error] 22#22: *4 open() "/usr/src/app/staticfilesadmin/css/dark_mode.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/dark_mode.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:42 [error] 23#23: *5 open() "/usr/src/app/staticfilesadmin/css/responsive.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/responsive.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:42 [error] 23#23: *5 open() "/usr/src/app/staticfilesadmin/js/nav_sidebar.js" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/js/nav_sidebar.js HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:42 [error] 22#22: *4 open() "/usr/src/app/staticfilesadmin/js/theme.js" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/js/theme.js HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 22#22: *4 open() "/usr/src/app/staticfilesadmin/css/base.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/base.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 23#23: *5 open() "/usr/src/app/staticfilesadmin/css/dark_mode.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/dark_mode.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 21#21: *3 open() "/usr/src/app/staticfilesadmin/css/nav_sidebar.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/nav_sidebar.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 20#20: *1 open() "/usr/src/app/staticfilesadmin/css/login.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/login.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 24#24: *6 open() "/usr/src/app/staticfilesadmin/css/responsive.css" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/css/responsive.css HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 24#24: *6 open() "/usr/src/app/staticfilesadmin/js/theme.js" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/js/theme.js HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 09:59:44 [error] 20#20: *1 open() "/usr/src/app/staticfilesadmin/js/nav_sidebar.js" failed (2: No such file or directory), client: 172.29.0.1, server: , request: "GET /static/admin/js/nav_sidebar.js HTTP/1.1", host: "localhost:1337", referrer: "http://localhost:1337/admin/login/?next=/admin/"
+2024/10/18 10:01:04 [info] 23#23: *5 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:01:04 [info] 21#21: *3 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:01:04 [info] 20#20: *1 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:01:04 [info] 24#24: *6 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:01:04 [info] 22#22: *4 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:39 [info] 21#21: *22 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:39 [info] 27#27: *20 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:39 [info] 20#20: *21 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:39 [info] 26#26: *16 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:59 [info] 20#20: *25 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:59 [info] 21#21: *28 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:59 [info] 20#20: *27 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:59 [info] 21#21: *26 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:04:59 [info] 20#20: *23 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:05:19 [info] 20#20: *30 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:07:00 [info] 20#20: *33 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:07:30 [info] 20#20: *39 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:08:35 [info] 20#20: *41 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:24:01 [info] 20#20: *61 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:24:01 [info] 21#21: *59 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:24:01 [info] 20#20: *60 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:24:01 [info] 20#20: *58 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:24:01 [info] 20#20: *56 client 172.29.0.1 closed keepalive connection

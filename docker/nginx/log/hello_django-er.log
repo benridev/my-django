@@ -1,0 +1,6 @@
+2024/10/18 10:27:22 [info] 21#21: *6 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:27:22 [info] 23#23: *8 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:27:22 [info] 25#25: *11 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:27:22 [info] 26#26: *12 client closed connection while waiting for request, client: 172.29.0.1, server: 0.0.0.0:80
+2024/10/18 10:27:22 [info] 24#24: *10 client 172.29.0.1 closed keepalive connection
+2024/10/18 10:27:22 [info] 22#22: *9 client 172.29.0.1 closed keepalive connection

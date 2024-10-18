@@ -1,4 +1,6 @@
 docker/database/var
+docker/database/postgres_data
 docker/nginx/conf.d/*.conf
+docker/nginx/log/
 app/env
 app/.env*
