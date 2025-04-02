@@ -11,7 +11,17 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get -y update \
-    && apt-get install -y libpq-dev gcc
+    && apt-get install -y libpq-dev unzip gcc chromium ffmpeg
+COPY chrome_114_amd64.deb ./
+# Install the Chrome Debian package
+RUN apt install ./chrome_114_amd64.deb -y
+# Download ChromeDriver binary version 114.0.5735.90 for Linux
+# RUN wget https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.110/linux64/chromedriver-linux64.zip
+RUN wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+RUN unzip chromedriver_linux64.zip
+# RUN mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
+RUN mv chromedriver /usr/bin/chromedriver
+RUN google-chrome --version
 # install dependencies
 # RUN pip install --upgrade pip
 # # COPY ./requirements.txt .

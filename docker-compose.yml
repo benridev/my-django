@@ -5,15 +5,19 @@ services:
     container_name: firstpy
     build:
       context: ./docker/python
+      shm_size: '2gb'
       dockerfile: ./Dockerfile-py-3-12-2-slim-bw
-    command: bash -c 'usermod -o -u 1000 www-data ; groupmod -o -g 1000 www-data ; chown -R www-data:www-data /usr/src/app/;source env/bin/activate && which python && pip install -r requirements.txt && gunicorn hello_django.wsgi:application --bind 0.0.0.0:8000'
+    # command: bash -c 'chown -R root:root /usr/src/app/ ;pip install -r requirements.txt && gunicorn hello_django.wsgi:application -t 300 --bind 0.0.0.0:8000 --reload'
+    command: bash -c 'usermod -o -u 1000 www-data ; groupmod -o -g 1000 www-data ; chown -R www-data:www-data /usr/src/app/;python -m venv env && source env/bin/activate && which python && pip install -r requirements.txt && gunicorn hello_django.wsgi:application -t 300 --bind 0.0.0.0:8000 --reload'
     # python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
+      # - ./app/dev/shm:/dev/shm
       - venv_data:/usr/src/app/env
-      - static_volume:/usr/src/app/staticfiles
+      # - static_volume:/usr/src/app/staticfiles
     # ports:
     #   - 8000:8000
+    shm_size: '2gb'
     expose:
       - 8000
     env_file:
@@ -41,7 +45,8 @@ services:
     volumes:
       - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
       - ./docker/nginx/log:/var/log/nginx
-      - static_volume:/usr/src/app/staticfiles
+      - ./app/staticfiles:/usr/src/app/staticfiles
+      - ./app/mediafiles:/usr/src/app/mediafiles
 volumes:
   postgres_data:
   venv_data:

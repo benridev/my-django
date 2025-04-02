@@ -16,7 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from upload.views import image_upload,image_convert,crawl,download
+from django.conf.urls.static import static
 
 urlpatterns = [
+    path("", image_upload, name="upload"),
+    path("convert",image_convert,name="convert"),
     path('admin/', admin.site.urls),
+    path('stackcr',crawl,name="stack_crawl"),
+    path('download',download,name="download")
 ]
+
+if bool(settings.DEBUG):
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

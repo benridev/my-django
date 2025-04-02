@@ -1,0 +1,1 @@
+docker exec -it -u 1000 firstpy bash
