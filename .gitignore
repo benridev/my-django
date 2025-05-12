@@ -5,3 +5,4 @@ docker/nginx/log/
 app/env
 app/.env*
 app/userdata/*
+app/log/*
